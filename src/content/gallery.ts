@@ -10,14 +10,6 @@ export interface GalleryItem extends ImageSpec {
   video?: string;
 }
 
-const slot = (n: number, label: string, w = 1200, h = 900): GalleryItem => ({
-  id: `g${n}`,
-  alt: `Gallery photo ${n}`,
-  label,
-  w,
-  h,
-});
-
 export const gallery: GalleryItem[] = [
   { id: "g1", src: "/images/gallery/gallery-1.jpg", alt: "Learners in a classroom", label: "GALLERY 1: classroom learning", w: 1200, h: 900 },
   { id: "g2", src: "/images/gallery/gallery-2.jpg", alt: "A smiling learner", label: "GALLERY 2: learner portrait", w: 900, h: 1200 },
