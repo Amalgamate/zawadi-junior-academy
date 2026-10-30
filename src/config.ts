@@ -29,10 +29,10 @@ export const school = {
 
   // Leave "" to hide an icon link. Use full https:// URLs.
   social: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://web.facebook.com/zawadijunioracademy",
+    instagram: "https://www.instagram.com/zawadijunioracademy",
     youtube: "",
-    tiktok: "",
+    tiktok: "https://www.tiktok.com/@zawadijunioracademy",
   },
 };
 
