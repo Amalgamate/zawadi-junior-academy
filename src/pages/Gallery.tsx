@@ -64,10 +64,6 @@ export default function Gallery() {
                 </li>
               ))}
             </ul>
-            <p className="muted narrow">
-              Gallery images are placeholders and do not show real school events. They will be replaced with photographs
-              the school owns and has permission to publish.
-            </p>
           </>
         )}
       </Section>
