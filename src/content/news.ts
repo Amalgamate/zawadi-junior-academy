@@ -19,30 +19,36 @@ export interface Post {
 
 export const posts: Post[] = [
   {
-    slug: "sample-admissions-announcement",
-    title: "Sample post: how admissions announcements will appear",
-    date: "2026-01-01",
-    category: "Admissions",
-    summary: "A demonstration of how the school can share admissions updates with families.",
+    slug: "celebrating-pp2-graduation-ceremony",
+    title: "Celebrating Our PP2 Graduation: Rising and Shining into Grade 1",
+    date: "2026-10-30",
+    category: "School Life",
+    summary: "A memorable celebration as our PP2 learners graduated with honors, ready to embark on their primary school journey.",
     body: [
-      "This is a demonstration post showing the layout of an announcement. It is not a real school notice.",
-      "Once the school supplies real news, this post should be deleted from src/content/news.ts.",
+      "Zawadi Junior Academy celebrated a joyous and colorful milestone as our PP2 class graduated in their ceremonial caps and gowns.",
+      "The ceremony was graced by proud parents, dedicated teachers, and the wider school community. Our young graduates presented heartwarming poems, choral performances, and demonstrated the confidence they have built throughout their early years.",
+      "Congratulations to the graduating class of PP2! We are excited to welcome you into Grade 1 as you continue to Rise & Shine.",
     ],
-    image: images.news,
-    draft: true,
+    image: {
+      src: "/media/graduation/pp2-grad-01.jpg",
+      alt: "Zawadi Junior Academy PP2 Graduation Ceremony",
+      label: "PP2 Graduation Ceremony",
+      w: 1600,
+      h: 1067,
+    },
   },
   {
-    slug: "sample-school-life-story",
-    title: "Sample post: sharing a moment from school life",
-    date: "2026-01-02",
-    category: "School Life",
-    summary: "A demonstration of a school life story with a featured image and a short summary.",
+    slug: "term-dates-and-admissions-open",
+    title: "Admissions Open for Play Group, Pre-Primary and Primary Grades",
+    date: "2026-10-25",
+    category: "Admissions",
+    summary: "Join the Zawadi family in Isiolo. We welcome new learners from Play Group to Grade 9.",
     body: [
-      "This is a demonstration post showing how stories from school life can be presented.",
-      "No real event is described here. Replace it with genuine school news and approved photographs.",
+      "Admissions for upcoming terms are ongoing at Zawadi Junior Academy in Isiolo.",
+      "We provide a nurturing, learner-centered environment with modern CBC curriculum implementation, dedicated teachers, and reliable school transport.",
+      "Parents and guardians are encouraged to get in touch or visit the school behind St. Paul Kiwanjani Sec School.",
     ],
     image: images.news,
-    draft: true,
   },
 ];
 

@@ -11,6 +11,20 @@ export interface GalleryItem extends ImageSpec {
 }
 
 export const gallery: GalleryItem[] = [
+  // PP2 Graduation 2026 Special Feature
+  { id: "grad1", src: "/media/graduation/pp2-grad-01.jpg", alt: "PP2 Graduation Ceremony: Young graduates proudly celebrating their milestone", label: "PP2 GRADUATION: Ceremony opening", w: 1600, h: 1067 },
+  { id: "grad2", src: "/media/graduation/pp2-grad-02.jpg", alt: "PP2 Graduate in ceremonial gown and cap smiling with confidence", label: "PP2 GRADUATION: Graduate portrait", w: 1067, h: 1600 },
+  { id: "grad3", src: "/media/graduation/pp2-grad-06.jpg", alt: "Learners performing an inspiring graduation poem on stage", label: "PP2 GRADUATION: Stage performance", w: 1600, h: 1067 },
+  { id: "grad4", src: "/media/graduation/pp2-grad-08.jpg", alt: "Receiving certificates of completion on stage at Zawadi", label: "PP2 GRADUATION: Certificate presentation", w: 1600, h: 1067 },
+  { id: "grad5", src: "/media/graduation/pp2-grad-10.jpg", alt: "Joyful parents, guardians and teachers applauding the young achievers", label: "PP2 GRADUATION: Parents & teachers", w: 1600, h: 1067 },
+  { id: "grad6", src: "/media/graduation/pp2-grad-11.jpg", alt: "Graduation choral presentation by PP2 class", label: "PP2 GRADUATION: Choral music", w: 1600, h: 1067 },
+  { id: "grad7", src: "/media/graduation/pp2-grad-13.jpg", alt: "Proud moment: graduate holding their certificate", label: "PP2 GRADUATION: Proud achievement", w: 1600, h: 1067 },
+  { id: "grad8", src: "/media/graduation/pp2-grad-14.jpg", alt: "Staff and school administration celebrating the graduating class", label: "PP2 GRADUATION: School leadership", w: 1600, h: 1067 },
+  { id: "grad9", src: "/media/graduation/pp2-grad-18.jpg", alt: "Traditional dance and cultural performance during the celebration", label: "PP2 GRADUATION: Cultural celebration", w: 1600, h: 1067 },
+  { id: "grad10", src: "/media/graduation/pp2-grad-20.jpg", alt: "Bright smile of a young PP2 graduate ready for Grade 1", label: "PP2 GRADUATION: Ready for Grade 1", w: 1067, h: 1600 },
+  { id: "grad11", src: "/media/graduation/pp2-grad-22.jpg", alt: "Tossing caps in celebration — Rise & Shine!", label: "PP2 GRADUATION: Celebration moment", w: 1600, h: 1067 },
+  { id: "grad12", src: "/media/graduation/pp2-grad-23.jpg", alt: "Graduates and families posing together in commemoration", label: "PP2 GRADUATION: Family photo", w: 1600, h: 1067 },
+
   // Videos with real posters
   { id: "v1", src: "/media/school-photo-05.jpg", video: "/media/school-video-02.mp4", alt: "Zawadi Junior Academy in action — video highlight", label: "VIDEO: school life", w: 1200, h: 1600 },
   { id: "v2", src: "/media/school-photo-06.jpg", video: "/media/school-video-03.mp4", alt: "Classroom and school presentation video", label: "VIDEO: learner activity", w: 1200, h: 1600 },
