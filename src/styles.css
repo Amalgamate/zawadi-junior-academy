@@ -531,10 +531,44 @@ main:focus {
 
 /* Footer */
 .site-footer {
+  position: relative;
   background: var(--navy-dark);
   color: #d5dbf5;
-  margin-top: var(--s5);
-  padding-top: var(--s5);
+  margin-top: 0;
+  padding-top: var(--s4);
+}
+
+.footer-clouds {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -65px;
+  pointer-events: none;
+}
+
+.footer-clouds svg {
+  display: block;
+  width: 100%;
+  height: 65px;
+}
+
+@media (min-width: 768px) {
+  .footer-clouds {
+    margin-top: -85px;
+  }
+  .footer-clouds svg {
+    height: 85px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-clouds {
+    margin-top: -105px;
+  }
+  .footer-clouds svg {
+    height: 105px;
+  }
 }
 
 .site-footer a {
@@ -912,8 +946,10 @@ main:focus {
 .band {
   background: var(--navy);
   color: #fff;
-  padding-block: var(--s4);
+  padding-top: var(--s4);
+  padding-bottom: calc(var(--s4) + 2rem);
   margin-top: var(--s5);
+  margin-bottom: 0;
 }
 
 .section+.band {

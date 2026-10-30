@@ -74,10 +74,42 @@ function Header() {
   );
 }
 
+function FooterClouds() {
+  return (
+    <div className="footer-clouds" aria-hidden="true">
+      <svg
+        viewBox="0 0 1440 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+      >
+        {/* Soft background cloud layer in playful sky-blue tint */}
+        <path
+          d="M0 120V75C40 75 75 62 110 62C155 62 190 82 240 82C295 82 335 50 395 50C460 50 500 78 565 78C625 78 665 42 735 42C805 42 850 72 915 72C975 72 1015 48 1080 48C1145 48 1185 76 1245 76C1300 76 1345 58 1390 58C1415 58 1430 63 1440 68V120H0Z"
+          fill="var(--sky)"
+          fillOpacity="0.22"
+        />
+        {/* Mid playful cloud puffs in bright sky / brand blue */}
+        <path
+          d="M0 120V88C30 88 55 74 90 74C135 74 165 92 210 92C265 92 300 64 360 64C420 64 455 86 515 86C575 86 610 58 675 58C740 58 775 82 840 82C905 82 940 60 1005 60C1070 60 1105 84 1170 84C1225 84 1260 66 1315 66C1365 66 1405 80 1440 85V120H0Z"
+          fill="var(--sky)"
+          fillOpacity="0.45"
+        />
+        {/* Foreground 2D vector cloud silhouette matching the navy-dark footer */}
+        <path
+          d="M0 120V92C25 92 48 76 78 76C112 76 132 94 168 94C208 94 235 68 280 68C328 68 355 90 398 90C440 90 472 62 525 62C578 62 608 84 655 84C702 84 735 54 795 54C855 54 888 80 940 80C990 80 1022 56 1078 56C1132 56 1162 82 1210 82C1252 82 1280 64 1325 64C1368 64 1400 82 1440 86V120H0Z"
+          fill="var(--navy-dark)"
+        />
+      </svg>
+    </div>
+  );
+}
+
 function Footer() {
   const social = Object.entries(school.social).filter(([, url]) => url);
   return (
     <footer className="site-footer">
+      <FooterClouds />
       <div className="container footer-grid">
         <div>
           <img src="/logo-zawadi.png" alt={`${school.name} logo`} width="92" height="85" loading="lazy" />

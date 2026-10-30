@@ -22,6 +22,7 @@ export default function Contact() {
               <div><dt>School</dt><dd>{school.name}</dd></div>
               <div><dt>Location</dt><dd>{school.town}, {school.county}, {school.country}</dd></div>
               <div><dt>Address</dt><dd><Value v={school.address} /></dd></div>
+              <div><dt>Website</dt><dd><a href={`https://${(school as any).website || "www.zawadijunioracademy.ac.ke"}`} target="_blank" rel="noopener noreferrer">{(school as any).website || "www.zawadijunioracademy.ac.ke"}</a></dd></div>
               <div><dt>Telephone</dt><dd>{tel ? <a href={tel}>{school.phone}</a> : <Value v={school.phone} />}</dd></div>
               <div><dt>WhatsApp</dt><dd>{wa ? <a href={wa} target="_blank" rel="noopener noreferrer">Message on WhatsApp</a> : <Value v={school.whatsapp} />}</dd></div>
               <div><dt>Email</dt><dd>{mail ? <a href={mail}>{school.email}</a> : <Value v={school.email} />}</dd></div>

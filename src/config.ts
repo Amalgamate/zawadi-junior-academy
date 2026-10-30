@@ -13,14 +13,15 @@ export const school = {
   county: "Isiolo County",
   country: "Kenya",
 
-  address: "[INSERT PHYSICAL ADDRESS]",
-  phone: "[INSERT SCHOOL PHONE]",
+  address: "Behind St. Paul Kiwanjani Sec School, Isiolo Kenya",
+  phone: "+254 713 229 185",
   // International format, digits only, e.g. 2547XXXXXXXX
-  whatsapp: "[INSERT WHATSAPP NUMBER]",
-  email: "[INSERT SCHOOL EMAIL]",
-  admissionsEmail: "[INSERT ADMISSIONS EMAIL]",
-  transportContact: "[INSERT TRANSPORT CONTACT]",
-  hours: "[INSERT OPENING HOURS]",
+  whatsapp: "254713229185",
+  email: "info@zawadijunioracademy.ac.ke",
+  website: "www.zawadijunioracademy.ac.ke",
+  admissionsEmail: "admissions@zawadijunioracademy.ac.ke",
+  transportContact: "+254 713 229 185",
+  hours: "Monday – Friday: 7:00 AM – 5:00 PM",
 
   // Paste a Google Maps share link and an embed URL once the location is verified.
   mapsUrl: "[INSERT GOOGLE MAPS URL]",
