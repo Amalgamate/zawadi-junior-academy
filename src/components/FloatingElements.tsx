@@ -187,3 +187,4 @@ export default function FloatingElements({ seed = 0 }: FloatingElementsProps) {
     </div>
   );
 }
+
