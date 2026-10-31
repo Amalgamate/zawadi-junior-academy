@@ -543,7 +543,9 @@ main:focus {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  margin-top: -65px;
+  /* background matches whatever section is above (band = --navy, or white) */
+  background: var(--navy);
+  margin-top: 0;
   pointer-events: none;
 }
 
@@ -554,18 +556,12 @@ main:focus {
 }
 
 @media (min-width: 768px) {
-  .footer-clouds {
-    margin-top: -85px;
-  }
   .footer-clouds svg {
     height: 85px;
   }
 }
 
 @media (min-width: 1200px) {
-  .footer-clouds {
-    margin-top: -105px;
-  }
   .footer-clouds svg {
     height: 105px;
   }

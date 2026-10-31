@@ -155,7 +155,6 @@ function Footer() {
   const social = Object.entries(school.social).filter(([, url]) => url);
   return (
     <footer className="site-footer">
-      <FooterClouds />
       <div className="container footer-grid">
         <div>
           <img src="/logo-zawadi.png" alt={`${school.name} logo`} width="92" height="85" loading="lazy" />
@@ -232,6 +231,7 @@ export default function Layout() {
       <main id="main" tabIndex={-1}>
         <Outlet />
       </main>
+      <FooterClouds />
       <Footer />
       <FloatingWhatsApp />
     </>
