@@ -20,7 +20,7 @@ export default function Home() {
     "Zawadi Junior Academy | Play Group to Grade 9 in Isiolo, Kenya",
     "Zawadi Junior Academy in Isiolo, Kenya supports learners from Play Group to Grade 9. Enquire about admission and school transport."
   );
-  const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
 
   return (
     <>
@@ -120,10 +120,10 @@ export default function Home() {
       <Section className="tint">
         <div className="section-head row">
           <div>
-            <p className="eyebrow">News</p>
-            <h2>News and announcements</h2>
+            <p className="eyebrow">From Our Desks</p>
+            <h2>News &amp; Announcements</h2>
           </div>
-          <Link to="/news" className="text-link">All news</Link>
+          <Link to="/news" className="text-link">All posts &rarr;</Link>
         </div>
         {latest.length === 0 ? (
           <p className="muted">There are no announcements right now. Please check back soon.</p>

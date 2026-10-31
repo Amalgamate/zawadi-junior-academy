@@ -14,7 +14,11 @@ export default function News() {
 
   return (
     <>
-      <PageHeader eyebrow="News" title="News and announcements" lead="Updates and stories from our school community." />
+      <PageHeader
+        eyebrow="From Our Desks"
+        title="News &amp; Announcements"
+        lead="Articles, stories, and reflections from the Zawadi Junior Academy community."
+      />
 
       <Section>
         {posts.length > 0 && (
