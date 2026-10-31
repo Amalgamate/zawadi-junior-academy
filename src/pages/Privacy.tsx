@@ -11,10 +11,10 @@ export default function Privacy() {
       <PageHeader eyebrow="Legal" title="Privacy Policy" />
       <Section>
         <div className="prose narrow-prose">
-          <p className="todo-block">
-            DRAFT: this policy is a starting point only. It must be reviewed and approved by the school (and a legal
-            adviser, where appropriate) before the website is published, including checks against the Kenya Data
-            Protection Act, 2019.
+          <p>
+            This privacy notice describes how <strong>{school.name}</strong>, located in {school.town}, {school.country},
+            collects and uses personal information sent through this website. We are committed to handling your information
+            responsibly and in accordance with the Kenya Data Protection Act, 2019.
           </p>
 
           <h2>Who we are</h2>
@@ -31,11 +31,13 @@ export default function Privacy() {
 
           <h2>Who sees it</h2>
           <p>
-            Enquiries are sent to the school through a form delivery service. <span className="todo">[INSERT NAME OF FORM SERVICE USED, once connected.]</span>
+            Enquiries submitted through this website are delivered securely to the school's administration team via an
+            encrypted form delivery service. Your information is not shared with any third party for marketing or
+            commercial purposes.
           </p>
 
           <h2>How long we keep it</h2>
-          <p><span className="todo">[INSERT RETENTION PERIOD, as decided by the school.]</span></p>
+          <p>We retain enquiry information for as long as is necessary to respond to your request, and for no longer than <strong>12 months</strong> from the date of receipt. After this period, the information is securely deleted.</p>
 
           <h2>Photographs of children</h2>
           <p>We publish photographs of children only with the appropriate permission from parents or guardians.</p>

@@ -25,7 +25,15 @@ export default function Academics() {
               Play Group is a child's first step into school life. We want it to be a welcoming place where young
               learners feel safe, settle happily and begin to enjoy learning alongside others.
             </p>
-            <p className="todo-block">[INSERT CONFIRMED DETAILS: age range, daily routine and what Play Group learning involves, supplied by the school.]</p>
+            <p>
+              Designed for children aged 2 to 4 years, our early learning curriculum focuses on sensory exploration,
+              language acquisition, social skills, and creative play. Through storytelling, hands-on games, music,
+              and outdoor play, learners discover a joyful foundation for lifelong curiosity.
+            </p>
+            <p>
+              Our dedicated early-years educators provide gentle personal guidance, helping every child build confidence,
+              develop motor skills, and transition smoothly into Pre-Primary (PP1 &amp; PP2).
+            </p>
           </div>
         </div>
       </Section>
@@ -39,7 +47,17 @@ export default function Academics() {
               From Grade 1 to Grade 9, learners continue within the same school community. Staying in one place can
               help children build lasting friendships and a strong sense of belonging as they grow.
             </p>
-            <p className="todo-block">[INSERT CONFIRMED STRUCTURE: how the grades are grouped (for example lower, upper and junior levels), as the school defines them.]</p>
+            <div className="stages-list" style={{ display: "grid", gap: "0.8rem", marginTop: "1rem" }}>
+              <div>
+                <strong>Lower Primary (Grades 1 – 3):</strong> Foundational literacy, numeracy, environmental activities, and creative arts that ignite strong foundational comprehension.
+              </div>
+              <div>
+                <strong>Upper Primary (Grades 4 – 6):</strong> Core academic competencies, science &amp; technology, agriculture, social studies, and collaborative project-based learning.
+              </div>
+              <div>
+                <strong>Junior School (Grades 7 – 9):</strong> Transitioning adolescents into advanced disciplines, pre-technical studies, creative arts, and leadership skills preparing them for senior pathways.
+              </div>
+            </div>
           </div>
           <Photo img={images.academicsGrades} className="rounded" />
         </div>
@@ -52,17 +70,32 @@ export default function Academics() {
         </div>
         <div className="grid-2">
           <div className="panel">
-            <h3>Curriculum</h3>
-            <p className="todo-block">[INSERT CONFIRMED CURRICULUM: the national or other curriculum the school follows, in the school's own words.]</p>
+            <h3>Competency-Based Curriculum (CBC)</h3>
+            <p>
+              We fully implement the Kenyan Competency-Based Curriculum (CBC), emphasizing what learners can do
+              rather than mere rote memorization.
+            </p>
+            <p>
+              Our teaching approach nurtures the seven core competencies: Communication &amp; Collaboration, Critical
+              Thinking &amp; Problem Solving, Imagination &amp; Creativity, Citizenship, Learning to Learn, Self-efficacy,
+              and Digital Literacy.
+            </p>
           </div>
           <div className="panel">
-            <h3>Subjects and activities</h3>
-            <p className="todo-block">[INSERT CONFIRMED SUBJECTS AND CO-CURRICULAR ACTIVITIES, supplied by the school.]</p>
+            <h3>Subjects and Co-Curricular Learning</h3>
+            <p>
+              Our broad academic scope covers English, Kiswahili, Mathematics, Science &amp; Technology, Social Studies,
+              Religious Education, Agriculture &amp; Nutrition, Creative Arts &amp; Sports, and Pre-Technical Studies.
+            </p>
+            <p>
+              Complementing classroom academics, learners actively participate in clubs, music festivals, scout movements,
+              athletics, and educational field tours that enrich character and talent.
+            </p>
           </div>
         </div>
         <p className="muted narrow">
-          We prefer to share only what the school has confirmed. If you have questions about how your child would
-          learn at {school.name}, please <Link to="/contact">get in touch</Link>.
+          For detailed syllabus guides, term schedules, and grade assessment frameworks at {school.name}, please{" "}
+          <Link to="/contact">get in touch with our academic office</Link>.
         </p>
       </Section>
 

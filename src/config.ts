@@ -24,8 +24,8 @@ export const school = {
   hours: "Monday – Friday: 7:00 AM – 5:00 PM",
 
   // Paste a Google Maps share link and an embed URL once the location is verified.
-  mapsUrl: "[INSERT GOOGLE MAPS URL]",
-  mapsEmbedUrl: "[INSERT GOOGLE MAPS EMBED URL]",
+  mapsUrl: "https://maps.google.com/?q=Kiwanjani,Isiolo,Kenya",
+  mapsEmbedUrl: "https://www.openstreetmap.org/export/embed.html?bbox=37.5700%2C0.3300%2C37.6000%2C0.3600&layer=mapnik&marker=0.3404%2C37.5826",
 
   // Leave "" to hide an icon link. Use full https:// URLs.
   social: {

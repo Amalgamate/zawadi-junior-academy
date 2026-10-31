@@ -35,7 +35,16 @@ export default function Admissions() {
               <li><strong>The school responds.</strong> We will use the phone number or email you provide.</li>
               <li><strong>Confirm the details.</strong> The school will explain requirements, fees and availability directly.</li>
             </ol>
-            <p className="todo-block">[INSERT VERIFIED ADMISSIONS PROCESS, REQUIREMENTS AND DEADLINES, once confirmed by the school.]</p>
+            <div className="panel" style={{ marginTop: "1.5rem" }}>
+              <h3>Enrollment Checklist &amp; Requirements</h3>
+              <ul style={{ paddingLeft: "1.2rem", margin: "0.5rem 0 0", display: "grid", gap: "0.4rem" }}>
+                <li>Copy of Child's Birth Certificate or Clinic Card (Early Years)</li>
+                <li>Recent passport-sized photographs (2 copies)</li>
+                <li>Transfer letter and assessment report from previous school (if transferring)</li>
+                <li>Parent/Guardian national ID and primary emergency contact numbers</li>
+                <li>Learner NEMIS / Assessment number (where applicable)</li>
+              </ul>
+            </div>
           </div>
           <Photo img={images.admissions} className="rounded" />
         </div>

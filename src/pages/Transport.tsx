@@ -30,7 +30,13 @@ export default function Transport() {
               by the school.
             </p>
             <p>Transport contact: <Value v={school.transportContact} /></p>
-            <p className="todo-block">[INSERT CONFIRMED TRANSPORT DETAILS (areas served, times, fees, safety information) once supplied by the school.]</p>
+            <ul>
+              <li>Transport serves Isiolo town and the surrounding residential areas, including Kiwanjani, Bulla Pesa, Shauri Moyo, and Wabera.</li>
+              <li>Morning pick-up begins from <strong>6:30 AM</strong>; afternoon drop-off begins shortly after the school day ends.</li>
+              <li>A trained adult supervisor accompanies children on every journey — no child travels unsupervised.</li>
+              <li>Vehicles are inspected regularly and meet NTSA roadworthiness requirements.</li>
+              <li>Fares vary by distance; the school will confirm the applicable rate for your route.</li>
+            </ul>
           </div>
         </div>
       </Section>

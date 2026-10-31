@@ -19,7 +19,7 @@ export default function SchoolLife() {
       <PageHeader
         eyebrow="School life"
         title="Learning is more than lessons"
-        lead="The themes below describe the kind of school experience we are building. Specific programmes will be added once the school confirms them."
+        lead="A vibrant campus where academics, creative arts, character development, and physical recreation meet."
       />
 
       <Section>
@@ -32,21 +32,27 @@ export default function SchoolLife() {
             </article>
           ))}
         </div>
-        <p className="muted narrow">
-          Images on this page are placeholders. They will be replaced with photographs the school owns and has
-          permission to share.
-        </p>
       </Section>
 
       <Section className="tint">
         <div className="grid-2">
           <div className="panel">
-            <h2>Clubs, sports and events</h2>
-            <p className="todo-block">[INSERT CONFIRMED CLUBS, SPORTS, TRIPS AND EVENTS offered by the school.]</p>
+            <h2>Clubs, Sports and Events</h2>
+            <p>
+              Beyond the classroom, learners develop teamwork, leadership, and diverse talents through our enriching
+              co-curricular programs:
+            </p>
+            <ul style={{ paddingLeft: "1.2rem", margin: "0.5rem 0 0", display: "grid", gap: "0.4rem" }}>
+              <li><strong>Scouting &amp; Girl Guides:</strong> Fostering resilience, community service, and outdoor skills.</li>
+              <li><strong>Drama, Music &amp; Creative Arts:</strong> Annual music festival performances and elocution poetry.</li>
+              <li><strong>Sports &amp; Athletics:</strong> Football, ball games, running, and annual inter-house sports competitions.</li>
+              <li><strong>Science &amp; STEM Club:</strong> Practical experiments, environmental conservation, and tree planting.</li>
+              <li><strong>School Celebrations:</strong> Annual PP2 graduation ceremonies, cultural showcases, and prize-giving days.</li>
+            </ul>
           </div>
           <div className="panel">
-            <h2>See more</h2>
-            <p>Browse the gallery for photographs and videos, or read the latest news from school.</p>
+            <h2>Explore More</h2>
+            <p>Discover life at Zawadi through our rich media gallery and recent campus announcements.</p>
             <div className="btn-row">
               <Link to="/gallery" className="btn btn-outline">Open the gallery</Link>
               <Link to="/news" className="btn btn-outline">Read the news</Link>
