@@ -63,6 +63,18 @@ function Header() {
             <NavLink key={n.to} to={n.to} end={n.to === "/"}>{n.label}</NavLink>
           ))}
           <Link to="/admissions#enquire" className="btn btn-primary nav-cta">Enquire</Link>
+          <a
+            href="https://zawadi.trendscore.co.ke"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline nav-login"
+            title="School Portal Login"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true" style={{ marginRight: "0.35rem" }}>
+              <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
+            Login
+          </a>
         </nav>
 
         <button className="menu-btn" aria-expanded={open} aria-controls="main-nav" onClick={() => setOpen((o) => !o)}>
@@ -151,6 +163,53 @@ function FloatingWhatsApp() {
   );
 }
 
+function NewsletterSubscription() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "success">("idle");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setStatus("success");
+    }
+  };
+
+  return (
+    <div className="footer-newsletter">
+      <h2>Newsletter</h2>
+      <p className="footer-newsletter-desc">
+        Subscribe for term updates, school events, and stories from our desks.
+      </p>
+      {status === "success" ? (
+        <div className="newsletter-success-box">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          <span>Thank you for subscribing!</span>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="newsletter-form">
+          <div className="newsletter-input-group">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="newsletter-input"
+              aria-label="Email address for newsletter"
+            />
+            <button type="submit" className="newsletter-btn">
+              Subscribe
+            </button>
+          </div>
+          <span className="newsletter-note">Term updates &amp; academic highlights.</span>
+        </form>
+      )}
+    </div>
+  );
+}
+
 function Footer() {
   const social = Object.entries(school.social).filter(([, url]) => url);
   return (
@@ -167,6 +226,7 @@ function Footer() {
           <ul>
             {nav.map((n) => <li key={n.to}><Link to={n.to}>{n.label}</Link></li>)}
             <li><Link to="/transport">Transport</Link></li>
+            <li><a href="#" className="staff-mail-link" title="Staff Webmail">Staff Mail</a></li>
           </ul>
         </div>
         <div>
@@ -174,6 +234,16 @@ function Footer() {
           <ul>
             <li><Link to="/admissions#enquire">Admissions enquiry</Link></li>
             <li><Link to="/transport#enquire">Transport enquiry</Link></li>
+            <li>
+              <a
+                href="https://zawadi.trendscore.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="School Portal Login"
+              >
+                Portal Login ↗
+              </a>
+            </li>
           </ul>
           <h2 className="mt">Contact</h2>
           <ul className="plain">
@@ -182,9 +252,12 @@ function Footer() {
             <li>{waHref() ? <a href={waHref()!} target="_blank" rel="noopener noreferrer">WhatsApp: {school.whatsapp}</a> : <Value v={school.whatsapp} />}</li>
             <li><Value v={school.address} /></li>
           </ul>
+        </div>
+        <div>
+          <NewsletterSubscription />
           {social.length > 0 && (
-            <div className="social-wrap">
-              <h2 className="mt" style={{ marginBottom: "0.5rem" }}>Connect with us</h2>
+            <div className="social-wrap" style={{ marginTop: "1.5rem" }}>
+              <h2 style={{ marginBottom: "0.5rem" }}>Connect with us</h2>
               <ul className="social">
                 {social.map(([name, url]) => (
                   <li key={name}>
