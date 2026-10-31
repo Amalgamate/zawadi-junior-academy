@@ -2079,3 +2079,213 @@ main:focus {
     animation: none !important;
   }
 }
+
+/* ─── TrendSCORE Digital Platform Section ────────────────── */
+.platform-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-roles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s3);
+  margin-bottom: var(--s4);
+}
+
+@media (max-width: 1020px) {
+  .platform-roles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .platform-roles {
+    grid-template-columns: 1fr;
+  }
+}
+
+.platform-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: var(--s3) var(--s3) var(--s3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 2px 8px rgba(18,33,118,0.05);
+}
+
+.platform-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(18,33,118,0.1);
+}
+
+.platform-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(90deg, var(--gold), var(--sky));
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.platform-card:hover::before {
+  opacity: 1;
+}
+
+.platform-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-icon svg {
+  width: 44px;
+  height: 44px;
+}
+
+.platform-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.platform-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Central hub logo */
+.platform-hub {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--s4);
+}
+
+.platform-hub-inner {
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  padding: var(--s3) var(--s4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 4px 20px rgba(18,33,118,0.08);
+  position: relative;
+}
+
+.platform-hub-inner::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 21px;
+  background: linear-gradient(135deg, var(--gold), var(--sky), var(--navy));
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.platform-hub-inner img {
+  max-width: 130px;
+  height: auto;
+}
+
+.platform-hub-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Download actions */
+.platform-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.platform-coming-soon {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ─── ICT / Coding & Robotics cards ─────────────────────── */
+.ict-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+  margin-top: var(--s3);
+}
+
+@media (max-width: 860px) {
+  .ict-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ict-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ict-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(18,33,118,0.1);
+}
+
+.ict-card-top {
+  height: 6px;
+}
+
+.ict-card-body {
+  padding: var(--s3);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ict-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2em 0.7em;
+  border-radius: 99px;
+  margin-bottom: 0.2rem;
+}
+
+.ict-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.ict-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
