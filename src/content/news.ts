@@ -100,11 +100,11 @@ export const posts: Post[] = [
       "Every vehicle is accompanied by an adult supervisor who assists younger learners with boarding, ensures seatbelt compliance, and oversees safe handover at designated stops. Vehicles undergo routine mechanical servicing to maintain strict compliance with national transport standards.",
     ],
     image: {
-      src: "/media/school-photo-14.jpg",
-      alt: "Zawadi school transport van ensuring safe daily commute in Isiolo",
-      label: "Safe School Transport",
-      w: 1599,
-      h: 720,
+      src: "/media/school-transport-bus.jpg",
+      alt: "Zawadi school bus with learners ready for daily transit in Isiolo",
+      label: "Zawadi School Bus",
+      w: 1024,
+      h: 461,
     },
   },
   {

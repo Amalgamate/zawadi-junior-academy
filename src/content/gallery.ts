@@ -41,7 +41,7 @@ export const gallery: GalleryItem[] = [
   { id: "g7", src: "/media/school-photo-28.jpg", alt: "Creative expression and co-curricular showcase", label: "GALLERY: creative arts", w: 1600, h: 1066 },
   { id: "g8", src: "/media/school-photo-30.jpg", alt: "Recreation, sports and play time in the school courtyard", label: "GALLERY: games & recreation", w: 1600, h: 1066 },
   { id: "g9", src: "/media/school-photo-31.jpg", alt: "Community celebrations and school milestones", label: "GALLERY: school celebration", w: 1600, h: 1200 },
-  { id: "g10", src: "/media/school-photo-14.jpg", alt: "Safe school transport ensuring daily commutes", label: "GALLERY: school transport", w: 1599, h: 720 },
+  { id: "g10", src: "/media/school-transport-bus.jpg", alt: "Safe school bus transport serving learners in Isiolo", label: "GALLERY: school transport", w: 1024, h: 461 },
   { id: "g11", src: "/media/school-photo-22.jpg", alt: "Dedicated teachers and staff mentoring young minds", label: "GALLERY: teacher mentorship", w: 1392, h: 928 },
   { id: "g12", src: "/media/school-photo-03.jpg", alt: "Early years foundation — joyful beginnings at Zawadi", label: "GALLERY: early years", w: 1200, h: 1600 },
 ];
