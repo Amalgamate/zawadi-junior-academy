@@ -543,9 +543,8 @@ main:focus {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  /* background matches whatever section is above (band = --navy, or white) */
-  background: var(--navy);
   margin-top: 0;
+  margin-bottom: -1px;
   pointer-events: none;
 }
 
@@ -1005,11 +1004,11 @@ main:focus {
 
 /* Admissions band */
 .band {
-  background: var(--navy);
-  color: #fff;
-  padding-top: var(--s4);
-  padding-bottom: calc(var(--s4) + 2rem);
-  margin-top: var(--s5);
+  background: transparent;
+  color: var(--ink);
+  padding-top: var(--s5);
+  padding-bottom: var(--s3);
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -1018,12 +1017,12 @@ main:focus {
 }
 
 .band h2 {
-  color: #fff;
+  color: var(--navy);
   margin-bottom: 0.4rem;
 }
 
 .band p {
-  color: #d5dbf5;
+  color: var(--muted);
   margin: 0;
   max-width: 55ch;
 }

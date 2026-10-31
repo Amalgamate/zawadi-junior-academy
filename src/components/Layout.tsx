@@ -95,7 +95,7 @@ function FooterClouds() {
           fill="var(--sky)"
           fillOpacity="0.45"
         />
-        {/* Foreground 2D vector cloud silhouette matching the navy-dark footer */}
+        {/* Foreground wave matching the navy-dark footer */}
         <path
           d="M0 120V92C25 92 48 76 78 76C112 76 132 94 168 94C208 94 235 68 280 68C328 68 355 90 398 90C440 90 472 62 525 62C578 62 608 84 655 84C702 84 735 54 795 54C855 54 888 80 940 80C990 80 1022 56 1078 56C1132 56 1162 82 1210 82C1252 82 1280 64 1325 64C1368 64 1400 82 1440 86V120H0Z"
           fill="var(--navy-dark)"
