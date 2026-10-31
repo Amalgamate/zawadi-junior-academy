@@ -6,6 +6,7 @@ import { gallery } from "../content/gallery";
 import Photo from "../components/Photo";
 import NewsSlider from "../components/NewsSlider";
 import GeometricCollage from "../components/GeometricCollage";
+import OutdoorCollage from "../components/OutdoorCollage";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
 
@@ -103,7 +104,7 @@ export default function Home() {
             <p>From active, collaborative classrooms to outdoor athletics, sports and creative discovery, education at Zawadi engages the whole child.</p>
             <Link to="/school-life" className="text-link">See school life</Link>
           </div>
-          <Photo img={images.life1} className="rounded" />
+          <OutdoorCollage />
         </div>
       </Section>
 
