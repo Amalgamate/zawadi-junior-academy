@@ -110,7 +110,7 @@ export default function Academics() {
           </p>
         </div>
 
-        <div className="ict-grid">
+        <div className="ict-grid ict-grid-4">
           {/* ICT Lab */}
           <div className="ict-card">
             <div className="ict-card-top" style={{ background: "linear-gradient(90deg, #3fa2dc, #122176)" }} />
@@ -177,6 +177,31 @@ export default function Academics() {
                 The programme nurtures engineering thinking, team collaboration, and creative problem-solving while
                 preparing learners to compete in regional STEM and robotics events.
               </p>
+            </div>
+          </div>
+
+          {/* LMS */}
+          <div className="ict-card ict-card-lms">
+            <div className="ict-card-top" style={{ background: "linear-gradient(90deg, #122176, #3fa2dc)" }} />
+            <div className="ict-card-body">
+              <span className="ict-badge" style={{ background: "rgba(18,33,118,0.1)", color: "#122176" }}>
+                <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13" aria-hidden="true">
+                  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zm0 3h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zm0 3h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
+                </svg>
+                LMS
+              </span>
+              <h3>Online Learning Platform</h3>
+              <p>
+                Our built-in <strong>Learning Management System</strong> means school never truly stops. Learners access
+                all their learning materials from the TrendSCORE app — on any Android device, from home.
+              </p>
+              <ul className="lms-list">
+                <li>Homework &amp; assignments set &amp; submitted online</li>
+                <li>Holiday learning packs for every class</li>
+                <li>Teacher notes, recorded lessons &amp; reading materials</li>
+                <li>CBC assessments with instant scores</li>
+                <li>Parents see every submission &amp; grade in real time</li>
+              </ul>
             </div>
           </div>
         </div>

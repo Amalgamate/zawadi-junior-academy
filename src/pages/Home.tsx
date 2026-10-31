@@ -217,6 +217,49 @@ export default function Home() {
           </div>
         </div>
 
+        {/* LMS spotlight */}
+        <div className="lms-spotlight">
+          <div className="lms-spotlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="28" fill="#122176" opacity=".07"/>
+              <rect x="14" y="16" width="28" height="20" rx="3" fill="none" stroke="#122176" strokeWidth="2"/>
+              <path d="M22 36v4M34 36v4M18 40h20" stroke="#122176" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M24 23l2 2 6-5" stroke="#3fa2dc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <div className="lms-spotlight-body">
+            <span className="lms-pill">Built-in LMS</span>
+            <h3>Learning doesn't stop at the school gate</h3>
+            <p>
+              Our <strong>Learning Management System (LMS)</strong> is built right into the TrendSCORE app. Learners log in
+              on any Android device to access their full learning world — term homework, graded assignments, holiday
+              reading packs, and teacher-posted resources — all in one place, any time.
+            </p>
+            <ul className="lms-feature-list">
+              <li>
+                <svg viewBox="0 0 16 16" fill="#3fa2dc" width="14" height="14" aria-hidden="true"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                Homework &amp; assignments set and submitted digitally
+              </li>
+              <li>
+                <svg viewBox="0 0 16 16" fill="#3fa2dc" width="14" height="14" aria-hidden="true"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                Holiday learning packs for every class
+              </li>
+              <li>
+                <svg viewBox="0 0 16 16" fill="#3fa2dc" width="14" height="14" aria-hidden="true"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                Teacher-posted notes, videos &amp; study materials
+              </li>
+              <li>
+                <svg viewBox="0 0 16 16" fill="#3fa2dc" width="14" height="14" aria-hidden="true"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                CBC-aligned assessments with instant feedback
+              </li>
+              <li>
+                <svg viewBox="0 0 16 16" fill="#3fa2dc" width="14" height="14" aria-hidden="true"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                Parents notified of every submission &amp; grade
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="platform-actions">
           <a
             href="/trendscore.apk"

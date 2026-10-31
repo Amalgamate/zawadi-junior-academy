@@ -2232,8 +2232,22 @@ main:focus {
   margin-top: var(--s3);
 }
 
+.ict-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1080px) {
+  .ict-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 860px) {
   .ict-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ict-grid-4 {
     grid-template-columns: 1fr;
   }
 }
@@ -2288,4 +2302,123 @@ main:focus {
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.55;
+}
+
+/* LMS card bullet list */
+.lms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.lms-list li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.lms-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--sky);
+  font-weight: 700;
+}
+
+/* ─── LMS Spotlight (homepage) ───────────────────────────── */
+.lms-spotlight {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s3) var(--s4);
+  align-items: start;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: var(--s3) var(--s4);
+  margin-bottom: var(--s4);
+  box-shadow: 0 2px 12px rgba(18,33,118,0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.lms-spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--sky), var(--gold));
+}
+
+@media (max-width: 700px) {
+  .lms-spotlight {
+    grid-template-columns: 1fr;
+    padding: var(--s3);
+  }
+  .lms-spotlight-icon {
+    display: none;
+  }
+}
+
+.lms-spotlight-icon svg {
+  width: 72px;
+  height: 72px;
+}
+
+.lms-spotlight-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lms-pill {
+  display: inline-block;
+  background: linear-gradient(90deg, #122176, #3fa2dc);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.22em 0.8em;
+  border-radius: 99px;
+  margin-bottom: 0.15rem;
+  width: fit-content;
+}
+
+.lms-spotlight-body h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.lms-spotlight-body > p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+.lms-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.4rem 1.5rem;
+}
+
+.lms-feature-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.lms-feature-list svg {
+  flex-shrink: 0;
+  margin-top: 2px;
 }
