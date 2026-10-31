@@ -26,21 +26,21 @@ export default function GeometricCollage({ className = "" }: Props) {
           />
         </div>
 
-        {/* Photo 3: Bottom Right — Teacher mentorship & collaborative study */}
-        <div className="collage-slot slot-bottom-mentor" title="Teacher guidance and mentorship">
+        {/* Photo 3: Bottom Right — Smiling Zawadi learner */}
+        <div className="collage-slot slot-bottom-mentor" title="Joyful Zawadi learner">
           <img
-            src="/media/school-photo-22.jpg"
-            alt="Dedicated Zawadi teachers mentoring young learners"
+            src="/media/school-photo-03.jpg"
+            alt="A joyful Zawadi Junior Academy learner in school uniform"
             loading="lazy"
             decoding="async"
           />
         </div>
 
-        {/* Photo 4: Bottom Center-Left — Creative arts & practical presentation */}
-        <div className="collage-slot slot-bottom-creative" title="Creative arts & presentation">
+        {/* Photo 4: Bottom Center-Left — Teacher mentorship & collaborative study */}
+        <div className="collage-slot slot-bottom-creative" title="Teacher guidance and mentorship">
           <img
-            src="/media/school-photo-28.jpg"
-            alt="Learners engaged in creative presentation and performance"
+            src="/media/school-photo-22.jpg"
+            alt="Dedicated Zawadi teachers mentoring young learners"
             loading="lazy"
             decoding="async"
           />

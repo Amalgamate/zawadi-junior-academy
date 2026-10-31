@@ -42,9 +42,7 @@ export default function Home() {
 
       <Section>
         <div className="split">
-          <div className="blob-frame">
-            <Photo img={images.welcome} className="blob" />
-          </div>
+          <GeometricCollage />
           <div>
             <p className="eyebrow">Welcome</p>
             <h2>A school for the whole of a child's early journey</h2>
@@ -105,7 +103,7 @@ export default function Home() {
             <p>From active, collaborative classrooms to outdoor athletics, sports and creative discovery, education at Zawadi engages the whole child.</p>
             <Link to="/school-life" className="text-link">See school life</Link>
           </div>
-          <GeometricCollage />
+          <Photo img={images.life1} className="rounded" />
         </div>
       </Section>
 
