@@ -166,7 +166,7 @@ function Footer() {
           <h2>Explore</h2>
           <ul>
             {nav.map((n) => <li key={n.to}><Link to={n.to}>{n.label}</Link></li>)}
-            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/transport">Transport</Link></li>
           </ul>
         </div>
         <div>

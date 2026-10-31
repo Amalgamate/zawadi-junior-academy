@@ -55,7 +55,7 @@ export const nav = [
   { label: "Academics", to: "/academics" },
   { label: "Admissions", to: "/admissions" },
   { label: "School Life", to: "/school-life" },
-  { label: "Transport", to: "/transport" },
+  { label: "Gallery", to: "/gallery" },
   { label: "News", to: "/news" },
   { label: "Contact", to: "/contact" },
 ];
