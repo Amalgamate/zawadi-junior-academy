@@ -39,11 +39,7 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--ink);
-  background-color: var(--bg);
-  background-image: url("/pattern-islamic.png");
-  background-repeat: repeat;
-  background-size: 320px 320px;
-  background-attachment: fixed;
+  background: var(--bg);
   line-height: 1.65;
   font-size: 1.0625rem;
   -webkit-font-smoothing: antialiased;
@@ -719,6 +715,7 @@ main:focus {
 /* Layout blocks */
 .section {
   padding-block: var(--s5);
+  background: #fff;
 }
 
 .section.tint {
@@ -726,7 +723,6 @@ main:focus {
   background-image: url("/pattern-islamic.png");
   background-repeat: repeat;
   background-size: 320px 320px;
-  background-attachment: fixed;
 }
 
 .section-head {
@@ -2080,7 +2076,7 @@ main:focus {
   }
 }
 
-/* ─── TrendSCORE Digital Platform Section ────────────────── */
+/* ─── Digital School Platform Section ────────────────── */
 .platform-section {
   position: relative;
   overflow: hidden;
@@ -2164,50 +2160,6 @@ main:focus {
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.55;
-}
-
-/* Central hub logo */
-.platform-hub {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--s4);
-}
-
-.platform-hub-inner {
-  background: #fff;
-  border: 2px solid var(--line);
-  border-radius: 20px;
-  padding: var(--s3) var(--s4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  box-shadow: 0 4px 20px rgba(18,33,118,0.08);
-  position: relative;
-}
-
-.platform-hub-inner::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 21px;
-  background: linear-gradient(135deg, var(--gold), var(--sky), var(--navy));
-  z-index: -1;
-  opacity: 0.3;
-}
-
-.platform-hub-inner img {
-  max-width: 130px;
-  height: auto;
-}
-
-.platform-hub-label {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--muted);
-  letter-spacing: 0.03em;
-  margin: 0;
-  text-transform: uppercase;
 }
 
 /* Download actions */

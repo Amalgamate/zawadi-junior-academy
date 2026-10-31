@@ -192,8 +192,8 @@ export default function Academics() {
               </span>
               <h3>Online Learning Platform</h3>
               <p>
-                Our built-in <strong>Learning Management System</strong> means school never truly stops. Learners access
-                all their learning materials from the TrendSCORE app — on any Android device, from home.
+                Our built-in <strong>Learning Management System</strong> means school never truly stops. Learners
+                access all their learning materials from our school app — on any Android device, from home.
               </p>
               <ul className="lms-list">
                 <li>Homework &amp; assignments set &amp; submitted online</li>

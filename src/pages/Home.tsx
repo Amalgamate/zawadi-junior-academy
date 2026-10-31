@@ -9,7 +9,7 @@ import GeometricCollage, { GeometricCollageImages } from "../components/Geometri
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
 
-/* ─── TrendSCORE Platform data ───────────────────────────── */
+/* ─── Digital Platform role data ────────────────────────── */
 const platformRoles = [
   {
     icon: (
@@ -94,7 +94,11 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="container hero-copy">
           <p className="eyebrow light">{school.motto}</p>
-          <h1>A Bright Beginning. A Future Full of Possibilities.</h1>
+          <h1>
+            A Bright Beginning.
+            <br />
+            A Future Full of Possibilities.
+          </h1>
           <p className="lead">Discover {school.name}, supporting learners from {school.learningRange} in {school.town}, {school.country}.</p>
           <div className="btn-row">
             <Link to="/admissions#enquire" className="btn btn-primary btn-lg">Enquire About Admission</Link>
@@ -182,14 +186,14 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* ── TrendSCORE Digital Platform ── */}
+      {/* ── Digital Platform ── */}
       <Section className="tint platform-section">
         <div className="section-head" style={{ textAlign: "center", maxWidth: "55ch", margin: "0 auto var(--s4)" }}>
           <p className="eyebrow">One Connected School</p>
-          <h2>Powered by TrendSCORE</h2>
+          <h2>Zawadi is fully digital</h2>
           <p className="muted">
-            Zawadi Junior Academy runs on <strong>TrendSCORE</strong> — a fully integrated school management platform that
-            keeps every part of our school community connected in real time.
+            Every part of our school community — admin, teachers, parents, and support staff — is connected
+            through a single digital platform, so nothing falls through the cracks.
           </p>
         </div>
 
@@ -201,20 +205,6 @@ export default function Home() {
               <p>{r.desc}</p>
             </div>
           ))}
-        </div>
-
-        {/* Hub connector graphic */}
-        <div className="platform-hub">
-          <div className="platform-hub-inner">
-            <img
-              src="/media/trendscore/mainlogo.png"
-              alt="TrendSCORE school platform"
-              width="120"
-              height="auto"
-              loading="lazy"
-            />
-            <p className="platform-hub-label">One platform. Every stakeholder.</p>
-          </div>
         </div>
 
         {/* LMS spotlight */}
@@ -231,9 +221,9 @@ export default function Home() {
             <span className="lms-pill">Built-in LMS</span>
             <h3>Learning doesn't stop at the school gate</h3>
             <p>
-              Our <strong>Learning Management System (LMS)</strong> is built right into the TrendSCORE app. Learners log in
-              on any Android device to access their full learning world — term homework, graded assignments, holiday
-              reading packs, and teacher-posted resources — all in one place, any time.
+              Our school app comes with a full <strong>Learning Management System</strong>. Learners log in
+              on any Android device to access their complete learning world — term homework, graded assignments,
+              holiday reading packs, and teacher-posted resources — all in one place, any time.
             </p>
             <ul className="lms-feature-list">
               <li>
@@ -263,13 +253,13 @@ export default function Home() {
         <div className="platform-actions">
           <a
             href="/trendscore.apk"
-            download="TrendSCORE.apk"
+            download="ZawadiSchool.apk"
             className="btn btn-secondary"
           >
             <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true" style={{ marginRight: "0.4em", verticalAlign: "middle" }}>
               <path d="M10 2a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L9 11.586V3a1 1 0 0 1 1-1zM3 17a1 1 0 0 1 1-1h12a1 1 0 0 1 0 2H4a1 1 0 0 1-1-1z"/>
             </svg>
-            Download Android App
+            Download School App (Android)
           </a>
           <p className="platform-coming-soon">
             <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true" style={{ marginRight: "0.3em", verticalAlign: "middle", opacity: 0.6 }}>
@@ -286,7 +276,7 @@ export default function Home() {
       </Section>
 
       {/* ── Gallery ── */}
-      <Section>
+      <Section className="tint">
         <div className="section-head row">
           <div>
             <p className="eyebrow">Gallery</p>
