@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { school } from "../config";
 import { images } from "../content/images";
-import { posts, formatDate } from "../content/news";
+import { posts } from "../content/news";
 import { gallery } from "../content/gallery";
 import Photo from "../components/Photo";
+import NewsSlider from "../components/NewsSlider";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
 
@@ -118,29 +119,7 @@ export default function Home() {
       </Section>
 
       <Section className="tint">
-        <div className="section-head row">
-          <div>
-            <p className="eyebrow">From Our Desks</p>
-            <h2>News &amp; Announcements</h2>
-          </div>
-          <Link to="/news" className="text-link">All posts &rarr;</Link>
-        </div>
-        {latest.length === 0 ? (
-          <p className="muted">There are no announcements right now. Please check back soon.</p>
-        ) : (
-          <div className="cards">
-            {latest.map((p) => (
-              <Link key={p.slug} to={`/news/${p.slug}`} className="card">
-                <Photo img={p.image} />
-                <div className="card-body">
-                  <p className="meta">{formatDate(p.date)} · {p.category}{p.draft && <span className="tag">Demonstration post</span>}</p>
-                  <h3>{p.title}</h3>
-                  <p>{p.summary}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
+        <NewsSlider posts={latest} />
       </Section>
 
       <Section>
