@@ -39,7 +39,11 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--ink);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url("/pattern-islamic.png");
+  background-repeat: repeat;
+  background-size: 320px 320px;
+  background-attachment: fixed;
   line-height: 1.65;
   font-size: 1.0625rem;
   -webkit-font-smoothing: antialiased;
@@ -718,7 +722,11 @@ main:focus {
 }
 
 .section.tint {
-  background: var(--tint);
+  background-color: var(--tint);
+  background-image: url("/pattern-islamic.png");
+  background-repeat: repeat;
+  background-size: 320px 320px;
+  background-attachment: fixed;
 }
 
 .section-head {
