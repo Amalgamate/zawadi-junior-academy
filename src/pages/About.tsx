@@ -56,22 +56,44 @@ export default function About() {
               community pride in Isiolo County, situated conveniently behind St. Paul Kiwanjani Secondary School.
             </p>
           </div>
-          <div className="panel">
-            <h2>Leadership & Vision</h2>
-            <p>
-              Under visionary school management and dedicated headship, {school.name} brings together experienced educators,
-              compassionate pastoral staff, and active parent-teacher collaboration.
-            </p>
-            <p>
-              <em>
-                &ldquo;At Zawadi, every child is a unique gift endowed with unlimited promise. Our mission is to walk beside
-                each learner, instilling academic competence, strong moral compass, and creative confidence to help them
-                truly Rise and Shine.&rdquo;
-              </em>
-            </p>
-            <p style={{ marginTop: "1rem", fontWeight: 600, color: "var(--navy)" }}>
-              — School Administration &amp; Academic Board
-            </p>
+          <div className="panel leadership-panel">
+            <h2>Leadership &amp; Vision</h2>
+            <div className="leadership-card">
+              <div className="director-profile-row">
+                <div className="director-photo-wrap">
+                  <img
+                    src="/media/director-guyo-huka-boru.jpg"
+                    alt="Mr. Guyo Huka Boru, School Director of Zawadi Junior Academy"
+                    className="director-photo"
+                    width="260"
+                    height="300"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="director-info">
+                  <h3 className="director-name">Mr. Guyo Huka Boru</h3>
+                  <p className="director-title">School Director &amp; Founder</p>
+                  <div className="director-sign-wrap" title="Signature of Mr. Guyo Huka Boru">
+                    <span className="script-signature">Guyo H. Boru</span>
+                    <svg width="130" height="14" viewBox="0 0 130 14" fill="none" aria-hidden="true">
+                      <path d="M2 10 Q 40 2, 75 8 T 128 4" stroke="var(--gold-dark)" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <blockquote className="director-quote">
+                &ldquo;Education is not merely the transmission of facts, but the ignition of curiosity,
+                character, and self-belief in every young heart. When we nurture a child&rsquo;s natural
+                wonder in an atmosphere of warmth and high expectation, their potential knows no limit.
+                At Zawadi, our mission is to walk beside each learner so they truly Rise and Shine.&rdquo;
+              </blockquote>
+
+              <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
+                Under Mr. Boru&rsquo;s dedicated leadership, {school.name} champions the Competency-Based Curriculum (CBC)
+                through personalized mentorship, strong moral foundations, and collaborative family partnerships.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
