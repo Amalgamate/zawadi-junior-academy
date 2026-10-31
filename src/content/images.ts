@@ -15,7 +15,7 @@ export interface ImageSpec {
 export const images = {
   hero: { src: "/media/school-photo-24.jpg", alt: "Zawadi Junior Academy learners in their bright school uniform outdoors", label: "HERO: School learners in vibrant uniform", w: 1600, h: 1066 },
   welcome: { src: "/media/school-photo-01.jpg", alt: "A joyful Zawadi Junior Academy learner in school uniform", label: "WELCOME: smiling Zawadi learner", w: 1200, h: 1600 },
-  academicsPlay: { src: "/media/school-photo-04.jpg", alt: "Early years and primary learners active in learning at Zawadi", label: "ACADEMICS: Play Group & primary learners", w: 1600, h: 1200 },
+  academicsPlay: { src: "/media/graduation/pp2-grad-08.jpg", alt: "Early years graduation and learning achievement at Zawadi Junior Academy", label: "ACADEMICS: Play Group & early years learners", w: 1600, h: 1067 },
   academicsGrades: { src: "/media/school-photo-07.jpg", alt: "Dedicated learners participating actively in class at Zawadi Junior Academy", label: "ACADEMICS: Junior Academy learning activity", w: 1600, h: 1200 },
   about: { src: "/media/school-photo-26.jpg", alt: "The school grounds and vibrant community of Zawadi Junior Academy", label: "ABOUT: school community & grounds", w: 1600, h: 1066 },
   life1: { src: "/media/school-photo-27.jpg", alt: "Learners focused on academic lessons in class", label: "SCHOOL LIFE: focused classroom learning", w: 1600, h: 1066 },
