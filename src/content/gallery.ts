@@ -32,6 +32,18 @@ export const gallery: GalleryItem[] = [
   { id: "v4", src: "/media/school-photo-33.jpg", video: "/media/school-video-06.mp4", alt: "Joyful moments with Zawadi learners and staff", label: "VIDEO: school community", w: 1200, h: 1600 },
 
   // Curated diverse photography across all categories
+  { id: "g-tree1", src: "/media/school-tree-planting-group.jpg", alt: "Zawadi learners and scouts proudly holding tree seedlings during environmental conservation day", label: "ENVIRONMENT: Tree planting day", w: 1040, h: 780 },
+  { id: "g-scout1", src: "/media/school-scouts-team.jpg", alt: "Zawadi scouts and leaders with expedition packs and camp equipment", label: "SCOUTS: Outdoor expedition", w: 1040, h: 780 },
+  { id: "g-art1", src: "/media/school-collaborative-art.jpg", alt: "Joyful learners creating colorful pattern designs during an outdoor creative workshop", label: "ARTS: Collaborative painting", w: 1040, h: 780 },
+  { id: "g-play1", src: "/media/school-activity-trampoline.jpg", alt: "Pupils enjoying recreation and outdoor jumping fun on the school trampoline", label: "PLAY: Trampoline recreation", w: 780, h: 1040 },
+  { id: "g-tree2", src: "/media/school-tree-planting-duo.jpg", alt: "Two proud Zawadi boys in smart uniform holding potted seedlings ready for planting", label: "ENVIRONMENT: Young conservationists", w: 780, h: 1040 },
+  { id: "g-clay", src: "/media/school-clay-modeling.jpg", alt: "Early years learners displaying letters and numbers molded from colorful play dough", label: "LEARNING: Early numeracy & clay work", w: 780, h: 1040 },
+  { id: "g-scout2", src: "/media/school-scouts-camping.jpg", alt: "Scouts lined up with their camping gear, tin mugs and backpacks", label: "SCOUTS: Camp preparation", w: 1040, h: 780 },
+  { id: "g-art2", src: "/media/school-art-workshop.jpg", alt: "Students painting patterns on poster boards with sponge brushes outdoors", label: "ARTS: Hands-on painting workshop", w: 1040, h: 780 },
+  { id: "g-art3", src: "/media/school-creative-painting.jpg", alt: "Group art activity: pupils collaborating on visual art projects", label: "ARTS: Outdoor creative discovery", w: 1040, h: 780 },
+  { id: "g-tree3", src: "/media/school-environmental-day.jpg", alt: "Learners gathered with seedlings for greening Isiolo campus initiative", label: "ENVIRONMENT: Campus greening", w: 1040, h: 780 },
+  { id: "g-play2", src: "/media/school-activity-playpark.jpg", alt: "Active play, climbing wall and trampoline games at Zawadi playpark", label: "PLAY: Outdoor playpark", w: 780, h: 1040 },
+
   { id: "g1", src: "/media/school-photo-01.jpg", alt: "A cheerful learner in the distinctive Zawadi blue and gold uniform", label: "GALLERY: learner portrait", w: 1200, h: 1600 },
   { id: "g2", src: "/media/school-photo-04.jpg", alt: "Classroom engagement and attentive learning session", label: "GALLERY: classroom study", w: 1600, h: 1200 },
   { id: "g3", src: "/media/school-photo-07.jpg", alt: "Collaborative learning and classroom activities", label: "GALLERY: academic session", w: 1600, h: 1200 },
