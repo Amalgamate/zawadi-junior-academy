@@ -5,6 +5,7 @@ import { posts } from "../content/news";
 import { gallery } from "../content/gallery";
 import Photo from "../components/Photo";
 import NewsSlider from "../components/NewsSlider";
+import GeometricCollage from "../components/GeometricCollage";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
 
@@ -101,10 +102,10 @@ export default function Home() {
           <div>
             <p className="eyebrow">School life</p>
             <h2>Learning is more than lessons</h2>
-            <p>Learning, creativity, play and community all shape a child's day. Photographs and stories from our school will be shared here.</p>
+            <p>From active, collaborative classrooms to outdoor athletics, sports and creative discovery, education at Zawadi engages the whole child.</p>
             <Link to="/school-life" className="text-link">See school life</Link>
           </div>
-          <Photo img={images.life1} className="rounded" />
+          <GeometricCollage />
         </div>
       </Section>
 

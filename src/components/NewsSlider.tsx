@@ -150,3 +150,4 @@ export default function NewsSlider({ posts }: Props) {
     </div>
   );
 }
+
