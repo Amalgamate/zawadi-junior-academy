@@ -1,46 +1,74 @@
-interface Props {
-  className?: string;
+export interface GeometricCollageImages {
+  top: string;
+  topAlt?: string;
+  left: string;
+  leftAlt?: string;
+  bottomRight: string;
+  bottomRightAlt?: string;
+  bottomLeft: string;
+  bottomLeftAlt?: string;
 }
 
-export default function GeometricCollage({ className = "" }: Props) {
+interface Props {
+  className?: string;
+  images?: GeometricCollageImages;
+  label?: string;
+}
+
+const defaultImages: GeometricCollageImages = {
+  top: "/media/school-photo-07.jpg",
+  topAlt: "Dedicated learners participating actively in class at Zawadi Junior Academy",
+  left: "/media/school-photo-24.jpg",
+  leftAlt: "Whole-school assembly and gathering at Zawadi",
+  bottomRight: "/media/school-photo-01.jpg",
+  bottomRightAlt: "A joyful Zawadi Junior Academy learner in school uniform",
+  bottomLeft: "/media/school-photo-28.jpg",
+  bottomLeftAlt: "Creative arts, presentations and performance by learners",
+};
+
+export default function GeometricCollage({
+  className = "",
+  images = defaultImages,
+  label = "Collage of Zawadi Junior Academy activities",
+}: Props) {
   return (
-    <div className={`geometric-collage-wrap ${className}`.trim()} aria-label="Collage of Zawadi Junior Academy classroom and outdoor activities">
+    <div className={`geometric-collage-wrap ${className}`.trim()} aria-label={label}>
       <div className="geometric-collage">
-        {/* Photo 1: Top Center/Right — Students in classroom learning */}
-        <div className="collage-slot slot-top-class" title="Classroom learning at Zawadi">
+        {/* Photo 1: Top Arch (Top Center-Right) */}
+        <div className="collage-slot slot-top-class">
           <img
-            src="/media/school-photo-27.jpg"
-            alt="Zawadi learners focused on coursework in class"
+            src={images.top}
+            alt={images.topAlt ?? "Zawadi school activity"}
             loading="lazy"
             decoding="async"
           />
         </div>
 
-        {/* Photo 2: Left — Outdoor sports & recreation */}
-        <div className="collage-slot slot-left-outdoor" title="Outdoor activities & recreation">
+        {/* Photo 2: Left Pill */}
+        <div className="collage-slot slot-left-outdoor">
           <img
-            src="/media/school-photo-30.jpg"
-            alt="Zawadi pupils enjoying outdoor games and recreation in the courtyard"
+            src={images.left}
+            alt={images.leftAlt ?? "Zawadi outdoor activity"}
             loading="lazy"
             decoding="async"
           />
         </div>
 
-        {/* Photo 3: Bottom Right — Smiling Zawadi learner */}
-        <div className="collage-slot slot-bottom-mentor" title="Joyful Zawadi learner">
+        {/* Photo 3: Bottom Right Teardrop */}
+        <div className="collage-slot slot-bottom-mentor">
           <img
-            src="/media/school-photo-03.jpg"
-            alt="A joyful Zawadi Junior Academy learner in school uniform"
+            src={images.bottomRight}
+            alt={images.bottomRightAlt ?? "Zawadi school community"}
             loading="lazy"
             decoding="async"
           />
         </div>
 
-        {/* Photo 4: Bottom Center-Left — Teacher mentorship & collaborative study */}
-        <div className="collage-slot slot-bottom-creative" title="Teacher guidance and mentorship">
+        {/* Photo 4: Bottom Center-Left Arch */}
+        <div className="collage-slot slot-bottom-creative">
           <img
-            src="/media/school-photo-22.jpg"
-            alt="Dedicated Zawadi teachers mentoring young learners"
+            src={images.bottomLeft}
+            alt={images.bottomLeftAlt ?? "Zawadi school presentation"}
             loading="lazy"
             decoding="async"
           />

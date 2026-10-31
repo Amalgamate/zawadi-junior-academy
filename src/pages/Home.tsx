@@ -5,10 +5,20 @@ import { posts } from "../content/news";
 import { gallery } from "../content/gallery";
 import Photo from "../components/Photo";
 import NewsSlider from "../components/NewsSlider";
-import GeometricCollage from "../components/GeometricCollage";
-import OutdoorCollage from "../components/OutdoorCollage";
+import GeometricCollage, { GeometricCollageImages } from "../components/GeometricCollage";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
+
+const schoolLifeCollageImages: GeometricCollageImages = {
+  top: "/media/school-photo-27.jpg",
+  topAlt: "Zawadi school staff and learners in outdoor environmental activities",
+  left: "/media/school-photo-30.jpg",
+  leftAlt: "Zawadi scouts in uniform marching outdoors on parade",
+  bottomLeft: "/media/school-photo-10.jpg",
+  bottomLeftAlt: "Learners in white choral robes singing into microphone outdoors",
+  bottomRight: "/media/school-photo-03.jpg",
+  bottomRightAlt: "Zawadi learner swimming in bright blue pool",
+};
 
 const pillars = [
   { t: "Nurturing learning", d: "A warm, encouraging place where children are supported to grow in confidence as learners." },
@@ -104,7 +114,7 @@ export default function Home() {
             <p>From active, collaborative classrooms to outdoor athletics, sports and creative discovery, education at Zawadi engages the whole child.</p>
             <Link to="/school-life" className="text-link">See school life</Link>
           </div>
-          <OutdoorCollage />
+          <GeometricCollage images={schoolLifeCollageImages} label="Outdoor life and activities at Zawadi" />
         </div>
       </Section>
 
