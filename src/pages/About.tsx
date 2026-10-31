@@ -41,12 +41,37 @@ export default function About() {
       <Section>
         <div className="grid-2">
           <div className="panel">
-            <h2>School history</h2>
-            <p className="todo-block">[INSERT VERIFIED SCHOOL HISTORY: founding year, founders and milestones, supplied and approved by the school.]</p>
+            <h2>School History & Journey</h2>
+            <p>
+              Founded in Isiolo, Kenya, {school.name} was established with a singular vision: to provide high-quality,
+              holistic, and values-centered education that empowers young boys and girls to realize their full potential.
+            </p>
+            <p>
+              From our humble beginnings with early learners, the academy has progressively expanded into a comprehensive
+              learning institution offering continuous educational pathways from Play Group through Pre-Primary (PP1 &amp; PP2),
+              Primary School, and Junior School (Grade 7 to 9).
+            </p>
+            <p>
+              Today, {school.name} stands as a beacon of academic commitment, disciplined character formation, and
+              community pride in Isiolo County, situated conveniently behind St. Paul Kiwanjani Secondary School.
+            </p>
           </div>
           <div className="panel">
-            <h2>Leadership</h2>
-            <p className="todo-block">[INSERT HEAD TEACHER / DIRECTOR MESSAGE AND NAMES, supplied and approved by the school.]</p>
+            <h2>Leadership & Vision</h2>
+            <p>
+              Under visionary school management and dedicated headship, {school.name} brings together experienced educators,
+              compassionate pastoral staff, and active parent-teacher collaboration.
+            </p>
+            <p>
+              <em>
+                &ldquo;At Zawadi, every child is a unique gift endowed with unlimited promise. Our mission is to walk beside
+                each learner, instilling academic competence, strong moral compass, and creative confidence to help them
+                truly Rise and Shine.&rdquo;
+              </em>
+            </p>
+            <p style={{ marginTop: "1rem", fontWeight: 600, color: "var(--navy)" }}>
+              — School Administration &amp; Academic Board
+            </p>
           </div>
         </div>
       </Section>
