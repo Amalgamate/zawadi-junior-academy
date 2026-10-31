@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { school } from "../config";
 import { images } from "../content/images";
@@ -8,6 +9,24 @@ import NewsSlider from "../components/NewsSlider";
 import GeometricCollage, { GeometricCollageImages } from "../components/GeometricCollage";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
+
+const heroSlides = [
+  {
+    src: "/media/school-photo-24.jpg",
+    alt: "Zawadi Junior Academy learners smiling together outdoors in uniform",
+    label: "Learners in school uniform",
+  },
+  {
+    src: "/media/graduation/pp2-grad-01.jpg",
+    alt: "Zawadi Junior Academy graduation ceremony on stage in front of Administration Block",
+    label: "PP2 graduation milestone",
+  },
+  {
+    src: "/media/school-tree-planting-group.jpg",
+    alt: "Zawadi learners and scouts uniting for campus tree planting",
+    label: "Environmental stewardship and campus life",
+  },
+];
 
 /* ─── Digital Platform role data ────────────────────────── */
 const platformRoles = [
@@ -86,11 +105,33 @@ export default function Home() {
     "Zawadi Junior Academy in Isiolo, Kenya supports learners from Play Group to Grade 9. Enquire about admission and school transport."
   );
   const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+  const [heroIndex, setHeroIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroIndex((prev) => (prev + 1) % heroSlides.length);
+    }, 6500);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <>
       <section className="hero">
-        <Photo img={images.hero} fill eager />
+        <div className="hero-kenburns-track" aria-hidden="true">
+          {heroSlides.map((slide, i) => (
+            <div
+              key={slide.src}
+              className={`hero-slide ${i === heroIndex ? "active" : ""}`}
+            >
+              <img
+                src={slide.src}
+                alt=""
+                className="hero-slide-img"
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+            </div>
+          ))}
+        </div>
         <div className="hero-shade" />
         <div className="container hero-copy">
           <p className="eyebrow light">{school.motto}</p>
@@ -103,6 +144,17 @@ export default function Home() {
           <div className="btn-row">
             <Link to="/admissions#enquire" className="btn btn-primary btn-lg">Enquire About Admission</Link>
             <Link to="/about" className="btn btn-light btn-lg">Discover Zawadi</Link>
+          </div>
+          <div className="hero-dots" aria-label="Hero carousel navigation">
+            {heroSlides.map((slide, i) => (
+              <button
+                key={slide.src}
+                type="button"
+                className={`hero-dot ${i === heroIndex ? "active" : ""}`}
+                onClick={() => setHeroIndex(i)}
+                aria-label={`Go to slide ${i + 1}: ${slide.label}`}
+              />
+            ))}
           </div>
         </div>
       </section>
