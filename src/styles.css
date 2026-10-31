@@ -801,6 +801,69 @@ main:focus {
   border-radius: var(--radius);
 }
 
+/* Organic Morphing Blob Frame & Photo */
+.blob-frame {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.blob-frame::before {
+  content: "";
+  position: absolute;
+  inset: -14px -14px -12px -12px;
+  background: linear-gradient(135deg, rgba(244, 184, 28, 0.45) 0%, rgba(63, 162, 220, 0.4) 50%, rgba(18, 33, 118, 0.25) 100%);
+  border-radius: 58% 42% 68% 32% / 42% 58% 42% 58%;
+  filter: blur(14px);
+  z-index: 0;
+  animation: blobMorph 14s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+.blob-frame::after {
+  content: "";
+  position: absolute;
+  inset: -6px -6px -4px -4px;
+  background: linear-gradient(220deg, var(--gold) 0%, var(--sky) 100%);
+  border-radius: 64% 36% 60% 40% / 48% 54% 46% 52%;
+  opacity: 0.55;
+  z-index: 0;
+  animation: blobMorph 10s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.photo.blob {
+  position: relative;
+  z-index: 1;
+  border-radius: 60% 40% 65% 35% / 45% 55% 45% 55%;
+  object-fit: cover;
+  animation: blobMorph 10s ease-in-out infinite alternate;
+  box-shadow: 0 16px 36px rgba(18, 33, 118, 0.16);
+  transition: transform 0.35s ease;
+  overflow: hidden;
+}
+
+.blob-frame:hover .photo.blob {
+  transform: scale(1.025);
+}
+
+@keyframes blobMorph {
+  0% {
+    border-radius: 60% 40% 65% 35% / 45% 55% 45% 55%;
+  }
+  33% {
+    border-radius: 48% 52% 42% 58% / 54% 44% 56% 46%;
+  }
+  66% {
+    border-radius: 54% 46% 58% 42% / 42% 58% 44% 56%;
+  }
+  100% {
+    border-radius: 42% 58% 48% 52% / 56% 42% 58% 44%;
+  }
+}
+
 .photo.fill {
   position: absolute;
   inset: 0;

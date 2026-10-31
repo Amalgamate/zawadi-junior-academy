@@ -41,7 +41,9 @@ export default function Home() {
 
       <Section>
         <div className="split">
-          <Photo img={images.welcome} className="rounded" />
+          <div className="blob-frame">
+            <Photo img={images.welcome} className="blob" />
+          </div>
           <div>
             <p className="eyebrow">Welcome</p>
             <h2>A school for the whole of a child's early journey</h2>
