@@ -5,9 +5,13 @@ import { Value } from "./ContactActions";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [aboutMenuOpen, setAboutMenuOpen] = useState(false);
   const { pathname } = useLocation();
 
-  useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    setOpen(false);
+    setAboutMenuOpen(false);
+  }, [pathname]);
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
@@ -59,7 +63,25 @@ function Header() {
         </Link>
 
         <nav className={`nav ${open ? "open" : ""}`} id="main-nav" aria-label="Main">
-          {nav.map((n) => (
+          {nav.map((n) => n.label === "Meet Zawadi" ? (
+            <div className="nav-dropdown" key={n.to}>
+              <NavLink to={n.to} className="nav-dropdown-trigger" aria-haspopup="true" aria-expanded={aboutMenuOpen} onClick={(event) => {
+                if (window.matchMedia("(max-width: 1020px)").matches) {
+                  event.preventDefault();
+                  setAboutMenuOpen((value) => !value);
+                }
+              }}>
+                {n.label}
+                <svg className="nav-chevron" viewBox="0 0 12 8" width="12" height="8" fill="none" aria-hidden="true"><path d="m1 1 5 5 5-5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </NavLink>
+              <div className={`nav-dropdown-menu ${aboutMenuOpen ? "is-open" : ""}`} aria-label="Meet Zawadi pages">
+                <NavLink to="/about">About Us</NavLink>
+                <NavLink to="/school-life">School Life</NavLink>
+                <NavLink to="/gallery">Gallery</NavLink>
+                <NavLink to="/csr">Student Support Fund</NavLink>
+              </div>
+            </div>
+          ) : (
             <NavLink key={n.to} to={n.to} end={n.to === "/"}>{n.label}</NavLink>
           ))}
           <Link to="/admissions#enquire" className="btn btn-primary nav-cta">Enquire</Link>

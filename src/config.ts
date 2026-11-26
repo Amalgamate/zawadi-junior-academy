@@ -21,6 +21,8 @@ export const school = {
   website: "www.zawadijunioracademy.ac.ke",
   admissionsEmail: "admissions@zawadijunioracademy.ac.ke",
   transportContact: "+254 713 229 185",
+  // PayPal merchant account email. Set this before accepting donations.
+  paypalEmail: "hukshallo@gmail.com",
   hours: "Monday – Friday: 7:00 AM – 5:00 PM",
 
   // Paste a Google Maps share link and an embed URL once the location is verified.
@@ -51,11 +53,9 @@ export const mailHref = (address: string = school.email): string | null =>
 
 export const nav = [
   { label: "Home", to: "/" },
-  { label: "About Us", to: "/about" },
+  { label: "Meet Zawadi", to: "/about" },
   { label: "Academics", to: "/academics" },
   { label: "Admissions", to: "/admissions" },
-  { label: "School Life", to: "/school-life" },
-  { label: "Gallery", to: "/gallery" },
   { label: "News", to: "/news" },
   { label: "Contact", to: "/contact" },
 ];

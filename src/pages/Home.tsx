@@ -9,6 +9,7 @@ import NewsSlider from "../components/NewsSlider";
 import GeometricCollage, { GeometricCollageImages } from "../components/GeometricCollage";
 import { Section, AdmissionsBand } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
+import DonationDialog from "../components/DonationDialog";
 
 const heroSlides = [
   {
@@ -106,6 +107,7 @@ export default function Home() {
   );
   const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
   const [heroIndex, setHeroIndex] = useState(0);
+  const [donationOpen, setDonationOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -133,7 +135,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hero-shade" />
-        <div className="container hero-copy">
+        <div className="container hero-copy" id="sponsor-a-child">
           <p className="eyebrow light">{school.motto}</p>
           <h1>
             A Bright Beginning.
@@ -143,7 +145,12 @@ export default function Home() {
           <p className="lead">Discover {school.name}, supporting learners from {school.learningRange} in {school.town}, {school.country}.</p>
           <div className="btn-row">
             <Link to="/admissions#enquire" className="btn btn-primary btn-lg">Enquire About Admission</Link>
-            <Link to="/about" className="btn btn-light btn-lg">Discover Zawadi</Link>
+            <button type="button" className="btn btn-paypal btn-lg" onClick={() => setDonationOpen(true)}>
+              <span className="paypal-icon-circle" aria-hidden="true">
+                <img className="paypal-logo" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="" />
+              </span>
+              Sponsor a Child
+            </button>
           </div>
           <div className="hero-dots" aria-label="Hero carousel navigation">
             {heroSlides.map((slide, i) => (
@@ -158,6 +165,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <DonationDialog open={donationOpen} onClose={() => setDonationOpen(false)} />
 
       <Section>
         <div className="split">
