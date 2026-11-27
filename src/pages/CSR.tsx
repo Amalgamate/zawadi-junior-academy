@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { school } from "../config";
 import { PageHeader, Section } from "../components/Sections";
 import { useSeo } from "../components/useSeo";
-import DonationDialog from "../components/DonationDialog";
 
 const focusAreas = [
   {
@@ -32,7 +30,6 @@ const studentStories = [
 ];
 
 export default function CSR() {
-  const [donationOpen, setDonationOpen] = useState(false);
   useSeo(
     "Student Support Fund | Zawadi Junior Academy",
     "Learn how Zawadi Junior Academy brings donors together to support students facing financial hardship in Isiolo, Kenya."
@@ -40,7 +37,6 @@ export default function CSR() {
 
   return (
     <>
-      <DonationDialog open={donationOpen} onClose={() => setDonationOpen(false)} />
       <PageHeader
         eyebrow="Student Support Fund"
         title="A brighter future, together"
@@ -92,14 +88,6 @@ export default function CSR() {
             <p className="eyebrow light">Be part of the change</p>
             <h2>Help a learner keep moving forward</h2>
             <p>Talk with us about supporting a student or partnering with the school.</p>
-          </div>
-          <div className="btn-row">
-            <button type="button" className="btn btn-paypal btn-lg csr-sponsor-button" onClick={() => setDonationOpen(true)}>
-              <span className="paypal-icon-circle" aria-hidden="true">
-                <img className="paypal-logo" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="" />
-              </span>
-              Sponsor a Child
-            </button>
           </div>
         </div>
       </section>
