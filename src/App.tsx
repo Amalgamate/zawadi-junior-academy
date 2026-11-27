@@ -13,7 +13,6 @@ import NewsArticle from "./pages/NewsArticle";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
-import CSR from "./pages/CSR";
 
 function NotFound() {
   useSeo("Page not found", "The page you were looking for could not be found.");
@@ -38,7 +37,6 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="academics" element={<Academics />} />
         <Route path="admissions" element={<Admissions />} />
-        <Route path="csr" element={<CSR />} />
         <Route path="school-life" element={<SchoolLife />} />
         <Route path="transport" element={<Transport />} />
         <Route path="news" element={<News />} />

@@ -78,7 +78,6 @@ function Header() {
                 <NavLink to="/about">About Us</NavLink>
                 <NavLink to="/school-life">School Life</NavLink>
                 <NavLink to="/gallery">Gallery</NavLink>
-                <NavLink to="/csr">Student Support Fund</NavLink>
               </div>
             </div>
           ) : (
